@@ -5,6 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int arrayLength = getArrayLength();
+        int[] numbers = new int[arrayLength];
+        fillAndPrintArray(numbers);
+    }
+
+    public static int getArrayLength() {
         Scanner scanner = new Scanner(System.in);
         int arrayLength;
 
@@ -19,11 +25,7 @@ public class Main {
 
             break;
         }
-
-
-        int[] numbers = new int[arrayLength];
-        fillAndPrintArray(numbers);
-
+        return arrayLength;
     }
 
     public static void fillAndPrintArray(int[] numbers) {
