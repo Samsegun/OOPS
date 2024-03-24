@@ -12,6 +12,9 @@ public class BasicCollections {
         numbers.add(74);
         numbers.add(14);
 
+        int[] hey = new int[2];
+
+
 
 
 //        for(Integer num: numbers) {

@@ -9,7 +9,9 @@ public class BasicGeneric<T> implements Iterable<T> {
 
     public void add(T item) {
 //        items[count++] = item;
-        items.add(item);
+        if(item != null) {
+            items.add(item);
+        }
     }
 
     @Override
