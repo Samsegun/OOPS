@@ -19,7 +19,6 @@ public class Main {
         l1.add(10);
         l1.add(20);
         System.out.println("displaying the sum= "+add(l1));
-
     }
 
     private static double add(ArrayList<? extends Number> num) {
@@ -32,15 +31,4 @@ public class Main {
 
         return sum;
     }
-//    private static Double add2(ArrayList<? super Integer> num) {
-//
-//        double sum=0.0;
-//
-//        for(Number n:num)
-//        {
-//            sum = sum+n.doubleValue();
-//        }
-//
-//        return sum;
-//    }
 }

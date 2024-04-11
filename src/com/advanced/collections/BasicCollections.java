@@ -1,9 +1,14 @@
 package com.advanced.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class BasicCollections {
+
+    public static void main(String[] args) {
+        example();
+    }
 
     public static void example() {
         List<Integer> numbers = new ArrayList<>();
@@ -12,20 +17,13 @@ public class BasicCollections {
         numbers.add(74);
         numbers.add(14);
 
-        int[] hey = new int[2];
+        numbers.set(1, 230);
 
+        Iterator<Integer> itr = numbers.iterator();
 
-
-
-//        for(Integer num: numbers) {
-//            System.out.println(num);
-//        }
-        System.out.println(numbers);
-        System.out.println(numbers.get(2));
-    }
-
-    public static void main(String[] args) {
-        example();
+        while(itr.hasNext()) {
+            System.out.println(itr.next());
+        }
     }
 
 }
